@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re</title>
+    <style>
+        h1{
+            background-color: aqua;
+            font-size: 50px;
+            border-color: black;
+        }
+       form{
+        width: 90%;
+        max-width: 600px;
+       }
+       
+       
+       a{
+        padding: 8px;
+       }
+       *{
+        box-sizing: border-box;
+       }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+        }
+        .container{
+            background-color: azure;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgreen;
+            border-radius: 4px;
+        }
+        input[type="text"],
+        select{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #de7f7f;
+            border-radius: 5px;
+        }
+        fieldset{
+            background-color: rgb(232, 224, 224);
+        }
+        button[type="submit"]{
+            background-color:lightpink;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button[type="submit"]:hover{
+            background-color: #c62222;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    <h1 style="text-align: center;">Give Reviews</h1>
+    
+    <a href="index.html">HOME</a>
+    <a href="Reviews.html">Reviews</a>
+    <form>
+    <p>Name <input type="text" required id="name" placeholder="" >
+   
+</p>
+<fieldset>
+    <legend>Gender</legend>
+    <p> Male<input type="radio" name="Gender" id="male" required>
+    
+    </p>
+    <p> Female<input type="radio" name="Gender" id="female"required>
+    
+    </p>
+</fieldset>
+    <p>Collage Name<input type="text" id="collage-name" required placeholder="">
+    
+    </p>
+    <p> Give Stars
+        <select name="Give_Stars" id="Give_Stars" required>
+        <option value="" >Give Stars</option required>
+        <option value="1">1</option required>
+        <option value="2">2</option required>
+        <option value="3">3</option required>
+        <option value="4">4</option required>
+        <option value="5">5</option required>
+    
+        
+    </select>
+    
+    </p>
+    
+    <p>
+        <button type="submit">SUBMIT</button>
+    </p>
+    </form>
+    </div>
+
+
+
+</body>
+</html>
