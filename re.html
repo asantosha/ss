@@ -55,21 +55,28 @@
         button[type="submit"]:hover{
             background-color: #c62222;
         }
+        .hov a:hover{
+            color: rgb(14, 169, 0);
+        }
+        
     </style>
 </head>
 
 
 <body>
+    
     <div class="container">
     <h1 style="text-align: center;">Give Reviews</h1>
-    
+    <p class="hov">
     <a href="index.html">HOME</a>
     <a href="Reviews.html">Reviews</a>
-    <form>
+    </p>
+    <form action="https://api.web3forms.com/submit" method="POST">
     <p>Name <input type="text" required id="name" placeholder="" >
    
 </p>
 <fieldset>
+    <input type="hidden" name="access_key" value="926823f9-33ac-41c0-bc3e-97312563b685">
     <legend>Gender</legend>
     <p> Male<input type="radio" name="Gender" id="male" required>
     
@@ -99,6 +106,7 @@
         <button type="submit">SUBMIT</button>
     </p>
     </form>
+    
     </div>
 
 
